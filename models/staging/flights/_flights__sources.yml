@@ -32,7 +32,7 @@ sources:
           - name: seat_no
             description: Номер места
           - name: fare_conditions
-            description: Приоритет
+            description: Класс обслуживания
       - name: bookings
         columns:
           - name: book_ref

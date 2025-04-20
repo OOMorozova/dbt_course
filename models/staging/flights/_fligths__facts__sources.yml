@@ -1,0 +1,49 @@
+sources:
+  - name: demo_src
+    description: Данные из БД бронирований
+    tables: 
+      - name: boarding_passes
+        description: Посадочные талоны
+        columns:
+          - name: ticket_no
+            description: Номер билета
+          - name: flight_id 
+            description: Идентификатор рейса
+          - name: boarding_no 
+            description: Номер посадочного талона
+          - name: seat_no
+            description: Номер места
+      - name: flights
+        description: Рейсы
+        columns:
+          - name: flight_id
+            description: Идентификатор рейса
+          - name: flight_no
+          - name: scheduled_departure
+          - name: scheduled_arrival
+          - name: departure_airport
+          - name: arrival_airport
+          - name: status
+          - name: aircraft_code
+          - name: actual_departure
+          - name: actual_arrival
+      - name: ticket_flights
+        description: Перелеты
+        columns:
+          - name: ticket_no
+            description: Номер билета
+          - name: flight_id
+            description: Идентификатор рейса
+          - name: fare_conditions
+            description: Класс обслуживания 
+          - name: amount
+            description: Стоимость перелета
+      - name: tickets
+        description: Билеты
+        columns:
+          - name: ticket_no
+            description: Номер билета
+          - name: book_ref
+          - name: passenger_id
+          - name: passenger_name
+          - name: contact_data
